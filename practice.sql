@@ -6,8 +6,6 @@ create table studentproftmp
 
 alter table studentdata drop primary key (student_name)
 
-alter table studentproftmp rename to studentprof
-
 alter table studentdata
 modify column student_id int
 
