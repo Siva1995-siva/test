@@ -6,8 +6,6 @@ create table studentproftmp
 
 alter table studentdata drop primary key (student_name)
 
-alter table studentproftmp rename to studentprof
-
 alter table studentdata
 modify column student_id int
 
@@ -71,3 +69,7 @@ modify column Student_ID int(20)
 alter table studentbio rename column student_Name to Student_branch
 
 alter table studentprof add constraint uk_student_subject unique (student_subject)
+
+alter table studentprof
+add column studentdata varchar(200)
+	
